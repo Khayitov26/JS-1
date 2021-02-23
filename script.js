@@ -7,7 +7,11 @@ var age = +prompt('Your age?');
 console.log('Your age is ' + age + '!');
 
 var first1 = +prompt('10+10=?');
-console.log('10 + 10 = ' + (10 + 10) + ' Your answer: ' + first1);
+if ('10 + 10 = ' + (10 + 10)) {
+    console.log('Your answer is right: ' + first1);
+} else {
+    console.log('Your answer is wrong: ' + first1);
+}
 
 var second2 = +prompt('10-10=?');
 console.log('10 - 10 = ' + (10 - 10) + ' Your answer: ' + second2);
