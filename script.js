@@ -106,12 +106,12 @@
 var first = +prompt('First num');
 var second = +prompt('Second num');
 var third = +prompt('Third num');
-if (((first < third && third > second) || (second < third && third < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
+if (((first < third && third < second) || (second < third && third < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
     alert('Average is ' + third);
-} else if (((third < first && first > second) || (second < first && first < third)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
-    alert('Average is ' + first);
-} else if (((first < second && second > third) || (third < second && second < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
+} else if (((first < second && second < third) || (third < second && second < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
     alert('Average is ' + second);
+} else if (((second < first && first < third) || (third < first && first < second)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
+    alert('Average is ' + first);
 } else {
     if (isNaN(first) && isNaN(second) && isNaN(third)) {
         alert('All is wrong');
