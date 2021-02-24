@@ -103,35 +103,31 @@ switch (days) {
 
 // HW 3
 
-let first = +prompt('First num');
-let second = +prompt('Second num');
-let third = +prompt('Third num');
+var first = +prompt('First num');
+var second = +prompt('Second num');
+var third = +prompt('Third num');
 if (((first < third && third < second) || (second < third && third < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
     alert('Average is ' + third);
 } else if (((first < second && second < third) || (third < second && second < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
     alert('Average is ' + second);
 } else if (((second < first && first < third) || (third < first && first < second)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
     alert('Average is ' + first);
-} else {
-    if (isNaN(first) && isNaN(second) && isNaN(third)) {
-        alert('All is wrong');
-    } else if (isNaN(first)) {
-        alert('first is wrong');
-    } else if (isNaN(second)) {
-        alert('second is wrong');
-    } else if (isNaN(third)) {
-        alert('third is wrong');
-    } if (isNaN(first) && isNaN(second)) {
-        alert('first and second are wrong');
-    } else if (isNaN(first) && isNaN(third)) {
-        alert('first and third are wrong');
-    } else if (isNaN(second) && isNaN(third)) {
-        alert('second and third are wrong');
-    } else {
-        alert('try again');
-    }
 }
-
+if (isNaN(first) && isNaN(second) && isNaN(third)) {
+    alert('All is wrong');
+} else if (isNaN(first)) {
+    alert('first is wrong');
+} else if (isNaN(second)) {
+    alert('second is wrong');
+} else if (isNaN(third)) {
+    alert('third is wrong');
+} if (isNaN(first) && isNaN(second)) {
+    alert('first and second are wrong');
+} else if (isNaN(first) && isNaN(third)) {
+    alert('first and third are wrong');
+} else if (isNaN(second) && isNaN(third)) {
+    alert('second and third are wrong');
+} 
 
 
 // HW 4
