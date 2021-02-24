@@ -9,16 +9,36 @@ var age = +prompt('Your age?');
 console.log('Your age is ' + age + '!');
 
 var first1 = +prompt('10+10=?');
-console.log('10 + 10 = ' + (10 + 10) + ' Your answer: ' + first1);
+var answer1 = 10 + 10;
+if (first1 === answer1) {
+    console.log('Your answer: ' + first1 + ' is right');
+} else if (first1 !== answer1) {
+    console.log('Your answer: ' + first1 + ' is wrong, ' + 'right answer is ' + answer1);
+}
 
 var second2 = +prompt('10-10=?');
-console.log('10 - 10 = ' + (10 - 10) + ' Your answer: ' + second2);
+var answer2 = 10 - 10;
+if (second2 === answer2) {
+    console.log('Your answer: ' + second2 + ' is right');
+} else if (second2 !== answer2) {
+    console.log('Your answer: ' + second2 + ' is wrong, ' + 'right answer is ' + answer2);
+}
 
 var third3 = +prompt('10*10=?');
-console.log('10 * 10 = ' + (10 * 10) + ' Your answer: ' + third3);
+var answer3 = 10 * 10;
+if (third3 === answer3) {
+    console.log('Your answer: ' + third3 + ' is right');
+} else if (third3 !== answer3) {
+    console.log('Your answer: ' + third3 + ' is wrong, ' + 'right answer is ' + answer3);
+}
 
 var fourth4 = +prompt('10/10=?');
-console.log('10 / 10 = ' + (10 / 10) + ' Your answer: ' + fourth4);
+var answer4 = 10 / 10;
+if (fourth4 === answer4) {
+    console.log('Your answer: ' + fourth4 + ' is right');
+} else if (fourth4 !== answer4) {
+    console.log('Your answer: ' + fourth4 + ' is wrong, ' + 'right answer is ' + answer4);
+}
 
 
 // // HW 2
