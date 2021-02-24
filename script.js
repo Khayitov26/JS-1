@@ -23,9 +23,6 @@ console.log('10 / 10 = ' + (10 / 10) + ' Your answer: ' + fourth4);
 
 var days = +prompt('Type hours');
 switch (days) {
-    case 00:
-        alert('midnight')
-        break;
     case 1:
         alert('1 AM')
         break;
@@ -95,6 +92,9 @@ switch (days) {
     case 23:
         alert('11 PM')
         break;
+    case 24:
+        alert('midnight')
+        break;
     default:
         alert('Noooooooooo');
         break;
@@ -103,9 +103,9 @@ switch (days) {
 
 // HW 3
 
-var first = +prompt('First num');
-var second = +prompt('Second num');
-var third = +prompt('Third num');
+let first = +prompt('First num');
+let second = +prompt('Second num');
+let third = +prompt('Third num');
 if (((first < third && third < second) || (second < third && third < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
     alert('Average is ' + third);
 } else if (((first < second && second < third) || (third < second && second < first)) && !isNaN(first) && !isNaN(second) && !isNaN(third)) {
@@ -121,7 +121,7 @@ if (((first < third && third < second) || (second < third && third < first)) && 
         alert('second is wrong');
     } else if (isNaN(third)) {
         alert('third is wrong');
-    } else if (isNaN(first) && isNaN(second)) {
+    } if (isNaN(first) && isNaN(second)) {
         alert('first and second are wrong');
     } else if (isNaN(first) && isNaN(third)) {
         alert('first and third are wrong');
