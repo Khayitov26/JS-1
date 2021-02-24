@@ -1,3 +1,5 @@
+
+
 // // HW 1
 
 var name = prompt('Your name?');
@@ -127,7 +129,7 @@ if (isNaN(first) && isNaN(second) && isNaN(third)) {
     alert('first and third are wrong');
 } else if (isNaN(second) && isNaN(third)) {
     alert('second and third are wrong');
-} 
+}
 
 
 // HW 4
