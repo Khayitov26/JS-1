@@ -164,6 +164,5 @@ if (0 < old && 18 > old) {
 } else if (59 < old && 150 > old) {
     alert('You are a pensioner.');
 } else {
-    (151 < old)
     alert('Smth gone wrong.');
 }
